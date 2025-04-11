@@ -89,7 +89,7 @@ export default function Features() {
         transition={ {
           duration: 0.5,
         }}
-        className={cn("w-full g1 max-md:rounded-2xl p-8 sm:p-10 md:p-12 space-y-4 max-md:border-2", item.id == "0" ? "md:rounded-tl-3xl": "md:rounded-tr-3xl ")}>
+        className={cn("w-full g1 max-md:rounded-2xl p-8 sm:p-10 md:p-12 space-y-4", item.id == "0" ? "md:rounded-tl-3xl": "md:rounded-tr-3xl ")}>
         <Image
           src={item.icon}
           width={90}
