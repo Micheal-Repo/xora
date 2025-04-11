@@ -82,7 +82,7 @@ export default function Testimonials() {
     id: number
   }) {
     return (
-      <div className={cn("w-full border-border p-4 sm:p-6 md:p-8 flex flex-col gap-4", first ? "border-b border-l border-r": "border-r border-b", id === 0 ? "border-t": "")}>
+      <div className={cn("w-full border-sp bg-sp p-4 sm:p-6 md:p-8 flex flex-col gap-4", first ? "border-b border-l border-r": "border-r border-b", id === 0 ? "border-t": "")}>
         <p className="text-white">
           {item.comment}
         </p>
