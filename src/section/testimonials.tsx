@@ -52,7 +52,15 @@ export default function Testimonials() {
         </div>
 
         {/*Marquee*/}
-        <div className="relative grid grid-cols-2 overflow-hidden max-w-2xl w-full h-[500px]">
+        <motion.div
+          initial={ { opacity: 0 }}
+          whileInView={ { opacity: 1 }}
+          transition={ {
+            duration: 0.5,
+
+          }}
+
+          className="relative grid grid-cols-2 overflow-hidden max-w-2xl w-full h-[500px]">
           <Marquee pauseOnHover vertical className="[--duration:20s] gap-0">
             {firstRow.map((item, i) => (
               <Card id={i} key={i} item={item} first={true} />
@@ -65,7 +73,7 @@ export default function Testimonials() {
           </Marquee>
           <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-background"></div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
