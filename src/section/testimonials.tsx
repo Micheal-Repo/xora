@@ -52,7 +52,7 @@ export default function Testimonials() {
         </div>
 
         {/*Marquee*/}
-        <div className="relative grid grid-cols-2 overflow-hidden gap-0 max-w-md w-full">
+        <div className="relative grid grid-cols-2 overflow-hidden max-w-2xl w-full h-[500px]">
           <Marquee pauseOnHover vertical className="[--duration:20s] gap-0">
             {firstRow.map((item, i) => (
               <Card id={i} key={i} item={item} first={true} />
