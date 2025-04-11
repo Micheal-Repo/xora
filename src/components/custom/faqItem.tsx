@@ -75,8 +75,8 @@ export default function FaqItems({
                 <h2 className="font-bold sm:text-xl text-[1.1rem]">{item.question}</h2>
 
                 <div className="shrink-0 flex-shrink-0 rounded-full h-10 w-10 relative p-3 g1 shadow shadow-black/[0.6]">
-                  <span className="w-[60%] h-1 w-6  bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  <span className="origin-center w-[60%] h-1 bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 opacity-100 group-data-expanded:rotate-0 group-data-expanded:opacity-0 transition-all duration-200" />
+                  <span className="w-[60%] h-[2px] bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                  <span className="origin-center w-[60%] h-[2px] bg-white absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90 opacity-100 group-data-expanded:rotate-0 group-data-expanded:opacity-0 transition-all duration-200" />
                 </div>
 
 
