@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gradient Comparison</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+    }
+
+    .gradient {
+      width:200px;
+      height:200px;
+    }
+
+    .original {
+      background: linear-gradient(to right, #334679, #263466);
+    }
+
+    .darker {
+      background: linear-gradient(to right, #1f2a4a, #1a2440);
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient original"></div>
+  <div class="gradient darker"></div>
+</body>
+</html>

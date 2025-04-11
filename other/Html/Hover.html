@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scale Hover Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #4CAF50;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(0.93);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

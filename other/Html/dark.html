@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark Neomorphic Button</title>
+  <style>
+    body {
+      background: #1e1e1e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .neomorphic-button {
+      padding: 20px 40px;
+      font-size: 1.2rem;
+      color: #ddd;
+      background: #2c2c2c;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 
+        8px 8px 16px #1a1a1a,
+        -8px -8px 16px #353535;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .neomorphic-button:active {
+      box-shadow: 
+        inset 6px 6px 12px #1a1a1a,
+        inset -6px -6px 12px #353535;
+    }
+  </style>
+</head>
+<body>
+  <button class="neomorphic-button">Click Me</button>
+</body>
+</html>
