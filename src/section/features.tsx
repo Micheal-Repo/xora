@@ -42,7 +42,7 @@ export default function Features() {
             transition={ {
               duration: 0.5,
             }}
-            className="relative z-30 w-full rounded-2xl md:rounded-3xl max-md:mt-6 md:-mt-4 border-2 border-sp p-8 sm:p-10  md:p-12 grid md:grid-cols-4 g2 sm:grid-cols-3 grid-cols-2 gap-4">
+            className="relative z-30 w-full rounded-2xl md:rounded-3xl max-md:mt-6 md:-mt-4  p-8 sm:p-10  md:p-12 grid md:grid-cols-4 g2 sm:grid-cols-3 grid-cols-2 gap-4">
             {details.map((item, i) => (
               <motion.div
                 key={item.id}
@@ -89,7 +89,7 @@ export default function Features() {
         transition={ {
           duration: 0.5,
         }}
-        className={cn("w-full g1 max-md:rounded-2xl border-sp p-8 sm:p-10 md:p-12 space-y-4 max-md:border-2", item.id == "0" ? "md:rounded-tl-3xl border-l-2 border-t-2": "md:rounded-tr-3xl border-r-2 border-t-2")}>
+        className={cn("w-full g1 max-md:rounded-2xl p-8 sm:p-10 md:p-12 space-y-4 max-md:border-2", item.id == "0" ? "md:rounded-tl-3xl": "md:rounded-tr-3xl ")}>
         <Image
           src={item.icon}
           width={90}
@@ -101,7 +101,7 @@ export default function Features() {
           {item.caption}
         </p>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">{item.title}</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold">{item.title}</h1>
 
         <p className="text-sp mt-8">
           {item.text}
