@@ -101,7 +101,7 @@ export default function Features() {
           {item.caption}
         </p>
 
-        <h1 className="text-3xl sm:text-4xl font-bold">{item.title}</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">{item.title}</h1>
 
         <p className="text-sp mt-8">
           {item.text}

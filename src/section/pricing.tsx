@@ -65,7 +65,7 @@ export default function Features() {
 
           {/*mobile*/}
           <div className="w-screen overflow-auto scroll-hide mt-8 md:hidden">
-            <div className="flex items-center gap-[50px] px-[20px] w-[1020px] py-[50px]">
+            <div className="flex items-center gap-[20px] px-[20px] w-[940px] py-[50px]">
 
               {plans.map((item, i)=>(
                 <div key={i} className="w-[300px]">
