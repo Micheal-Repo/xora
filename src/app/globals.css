@@ -54,6 +54,7 @@
   --color-s4: var(--s4);
   --color-s5: var(--s5);
   --color-s6: var(--s6);
+  --color-b1: var(--b1);
   --drop-shadow-100: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD;
   --drop-shadow-200: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 4px 10px #3391FF;
   --drop-shadow-300: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 16px 24px rgba(0, 0, 0, 0.25), inset 0px 3px 6px #1959AD;
@@ -164,6 +165,7 @@
   --s4: #1959AD;
   --s5: #263466;
   --s6: hsla(225,55%,20%,1);
+  --b1:hsla(233,50%,9%,1);
 }
 
 @layer base {
@@ -249,7 +251,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .border-sp {
-  @apply border-s6
+  @apply border-b1
 }
 
 .text-sp{
