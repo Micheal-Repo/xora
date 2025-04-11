@@ -50,7 +50,7 @@ export default function Faq() {
               duration: 0.5,
             }}
             className="relative mt-28 relative grid md:grid-cols-2 grid-cols-1">
-            <div className="absolute left-1/2 -translate-x-1/2 w-[70px] h-[70px] flex justify-center items-center  -top-[35px] rounded-full bg-sp">
+            <div className="absolute left-1/2 -translate-x-1/2 w-[70px] h-[70px] flex justify-center items-center  -top-[35px] rounded-full bg-card">
 
               <Image
                 src="/images/faq-logo.svg"
@@ -60,11 +60,11 @@ export default function Faq() {
 
                 />
             </div>
-            <div className="bg-sp  md:rounded-l-2xl rounded-t-2xl px-4 sm:px-6 md:py-6 pt-14">
+            <div className="bg-card  md:rounded-l-2xl rounded-t-2xl px-4 sm:px-6 md:py-6 pt-14">
 
               <FaqItems first={true} />
             </div>
-            <div className="md:bg-gradient-to-l bg-gradient-to-r from-s1 to-s2   md:rounded-r-2xl max-md:rounded-b-2xl px-4 sm:px-6 md:py-6 pb-6">
+            <div className="bg-card md:rounded-r-2xl max-md:rounded-b-2xl px-4 sm:px-6 md:py-6 pb-6">
 
               <FaqItems />
             </div>
