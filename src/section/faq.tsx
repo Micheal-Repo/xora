@@ -23,7 +23,7 @@ export default function Faq() {
   return (
     <ScrollElement name={navLink[2].link}>
 
-      <section className="w-screen relative z-30 section-p mt-[2rem]">
+      <section className="w-screen relative z-30 section-p ">
         <Gradient />
         <div className="relative z-20 container text-left">
           <Title className="text-left">Curiosity didn't kill the cat, it gave it answers.</Title>
@@ -49,22 +49,22 @@ export default function Faq() {
             transition={ {
               duration: 0.5,
             }}
-            className="relative mt-28 relative grid md:grid-cols-2 grid-cols-1">
-            <div className="absolute left-1/2 -translate-x-1/2 w-[70px] h-[70px] flex justify-center items-center  -top-[35px] rounded-full bg-card">
+            className="relative mt-20 relative grid md:grid-cols-2 grid-cols-1">
+            <div className="absolute left-1/2 -translate-x-1/2 w-[70px] h-[70px] flex justify-center items-center  -top-[35px] rounded-full bg-sp">
 
               <Image
                 src="/images/faq-logo.svg"
                 alt="logo"
-                width={50}
-                height={50}
+                width={40}
+                height={40}
 
                 />
             </div>
-            <div className="bg-card  md:rounded-l-2xl rounded-t-2xl px-4 sm:px-6 md:py-6 pt-14">
+            <div className="bg-sp  md:rounded-l-2xl rounded-t-2xl px-4 sm:px-6 md:py-6 pt-14">
 
               <FaqItems first={true} />
             </div>
-            <div className="bg-card md:rounded-r-2xl max-md:rounded-b-2xl px-4 sm:px-6 md:py-6 pb-6">
+            <div className="bg-sp  md:rounded-r-2xl max-md:rounded-b-2xl px-4 sm:px-6 md:py-6 pb-6">
 
               <FaqItems />
             </div>

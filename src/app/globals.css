@@ -158,7 +158,7 @@
   --p3: #C8EA80;
   --p4: #EAEDFF;
   --p5: #C4CBF5;
-  --s1: #080D27;
+  --s1: hsla(233,30%,9%,1);
   --s2: #0C1838;
   --s3: #334679;
   --s4: #1959AD;
@@ -257,7 +257,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .bg-sp{
-  @apply bg-gradient-to-r from-s1 to-s2
+  @apply bg-s1
 }
 
   .scroll-hide::-webkit-scrollbar {

@@ -152,10 +152,10 @@ export default function Features() {
           delay: id * 0.2
         }}
         className={cn(
-          "w-full max-md:border-2 max-md:rounded-3xl border-sp relative bg-sp relative",
+          "w-full max-md:border max-md:rounded-3xl border-sp relative bg-sp relative",
           id === 1
-          ? "border-2 rounded-3xl bg-s5": id === 0
-          ? "border-l-2 border-y-2 rounded-l-3xl": "border-y-2 border-r-2 rounded-r-3xl"
+          ? "border rounded-3xl bg-s5": id === 0
+          ? "border-l border-y rounded-l-3xl": "border-y border-r rounded-r-3xl"
         )}
         >
 
