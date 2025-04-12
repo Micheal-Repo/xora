@@ -23,48 +23,67 @@ export default function Hero() {
         <div className="container pt-[8rem] md:pt-[10rem] pb-[6rem] relative z-20">
           {/*left*/}
           <div className="relative z-20 flex flex-col gap-6">
-            <TextAnimate
-              animation="slideLeft"
-              by="character"
-              className="caption"
-              once={true}
+            <motion.p
+              initial={ { scale: 0.8, opacity: 0 }}
+              whileInView={ { scale: 1, opacity: 1 }}
+              viewport={ { once: true }}
+              transition={ {
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
               >
               Video Editing
-            </TextAnimate>
+            </motion.p>
             <div>
-              <TextAnimate
-                delay={0.5}
-                animation="scaleUp"
-                by="text"
-                once={true}
+              <motion.p
+                initial={ { scale: 0.8, opacity: 0 }}
+                whileInView={ { scale: 1, opacity: 1 }}
+                viewport={ { once: true }}
+                transition={ {
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                  delay: 0.5,
+                }}
                 className="font-poppins text-4xl md:text-6xl font-bold uppercase max-w-sm"
                 >
                 Amazingly
-              </TextAnimate>
-              <TextAnimate
-                delay={0.5}
-                animation="scaleUp"
-                by="text"
-                once={true}
+              </motion.p>
+              <motion.p
+                initial={ { scale: 0.8, opacity: 0 }}
+                whileInView={ { scale: 1, opacity: 1 }}
+                viewport={ { once: true }}
+                transition={ {
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                  delay: 0.5,
+                }}
                 className="font-poppins text-4xl md:text-6xl font-bold uppercase max-w-sm"
                 >
                 simple
-              </TextAnimate>
+              </motion.p>
             </div>
-            <TextAnimate
-              delay={1}
-              animation="blurIn"
-              as="p"
-              once={true}
+            <motion.p
+              initial={ { scale: 0.8, opacity: 0 }}
+              whileInView={ { scale: 1, opacity: 1 }}
+              viewport={ { once: true }}
+              transition={ {
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+                delay: 0.7,
+              }}
               className="body max-w-sm"
               >
               We designed XORA AI Video Editor to be an easy to use, quick to
               learn, and surprisingly powerful.
-            </TextAnimate>
+            </motion.p>
             <motion.div
               initial={ { scale: 0.8, opacity: 0 }}
               whileInView={ { scale: 1, opacity: 1 }}
-              //viewport={ { once: true }}
+              viewport={ { once: true }}
               transition={ {
                 type: "spring",
                 stiffness: 200,
@@ -95,7 +114,7 @@ export default function Hero() {
           <motion.div
             initial={ { y: -20, opacity: 0 }}
             whileInView={ { y: 0, opacity: 1 }}
-            //viewport={ { once: true }}
+            viewport={ { once: true }}
             transition={ {
               duration: 0.5,
               delay: 2,

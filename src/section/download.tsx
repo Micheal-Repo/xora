@@ -37,6 +37,7 @@ export default function Download() {
               <motion.div
                 initial={ { scale: 0.8, opacity: 0 }}
                 whileInView={ { scale: 1, opacity: 1 }}
+                viewport={ { once: true }}
                 transition={ {
                   type: "spring",
                   stiffness: 200,
@@ -53,6 +54,7 @@ export default function Download() {
               <motion.p
                 initial={ { scale: 0.8, opacity: 0 }}
                 whileInView={ { scale: 1, opacity: 1 }}
+                viewport={ { once: true }}
                 transition={ {
                   type: "spring",
                   stiffness: 200,
@@ -68,6 +70,7 @@ export default function Download() {
                   <motion.div
                     key={i}
                     initial={ { scale: 0.8, opacity: 0 }}
+                    viewport={ { once: true }}
                     whileInView={ { scale: 1, opacity: 1 }}
                     transition={ {
                       type: "spring",
@@ -89,6 +92,7 @@ export default function Download() {
               transition={ {
                 duration: 0.5
               }}
+              viewport={ { once: true }}
               className="border border-white/[0.3] rounded-2xl p-4 max-md:hidden">
               <Image
                 src="/images/screen.jpg"

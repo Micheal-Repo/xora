@@ -38,7 +38,7 @@ export default function Features() {
           <motion.div
             initial={ { y: -20, opacity: 0 }}
             whileInView={ { y: 0, opacity: 1 }}
-            //viewport={ { once: true }}
+            viewport={ { once: true }}
             transition={ {
               duration: 0.5,
             }}
@@ -48,7 +48,7 @@ export default function Features() {
                 key={item.id}
                 initial={ { scale: 0.8, opacity: 0 }}
                 whileInView={ { scale: 1, opacity: 1 }}
-                //viewport={ { once: true }}
+                viewport={ { once: true }}
                 transition={ {
                   type: "spring",
                   stiffness: 200,
@@ -85,7 +85,7 @@ export default function Features() {
       <motion.div
         initial={ { y: 20, opacity: 0 }}
         whileInView={ { y: 0, opacity: 1 }}
-        //viewport={ { once: true }}
+        viewport={ { once: true }}
         transition={ {
           duration: 0.5,
         }}

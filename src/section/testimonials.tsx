@@ -39,6 +39,7 @@ export default function Testimonials() {
           <motion.p
             initial={ { scale: 0.8, opacity: 0 }}
             whileInView={ { scale: 1, opacity: 1 }}
+            viewport={ { once: true }}
             transition={ {
               type: "spring",
               stiffness: 200,
@@ -57,9 +58,8 @@ export default function Testimonials() {
           whileInView={ { opacity: 1 }}
           transition={ {
             duration: 0.5,
-
           }}
-
+          viewport={ { once: true }}
           className="relative grid grid-cols-2 overflow-hidden max-w-2xl w-full h-[500px]">
           <Marquee pauseOnHover vertical className="[--duration:20s] gap-0">
             {firstRow.map((item, i) => (

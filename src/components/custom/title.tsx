@@ -17,6 +17,7 @@ export default function Title({
     <motion.h2
       initial={ { scale: 0.8, opacity: 0 }}
       whileInView={ { scale: 1, opacity: 1 }}
+      viewport={ { once: true }}
       transition={ {
         type: "spring",
         stiffness: 200,

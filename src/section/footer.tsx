@@ -15,6 +15,7 @@ export default function Footer() {
         <motion.p
           initial={ { scale: 0.8, opacity: 0 }}
           whileInView={ { scale: 1, opacity: 1 }}
+          viewport={ { once: true }}
           transition={ {
             type: "spring",
             stiffness: 200,
@@ -28,6 +29,7 @@ export default function Footer() {
           <motion.p
             initial={ { scale: 0.8, opacity: 0 }}
             whileInView={ { scale: 1, opacity: 1 }}
+            viewport={ { once: true }}
             transition={ {
               type: "spring",
               stiffness: 200,
@@ -40,6 +42,7 @@ export default function Footer() {
           <motion.p
             initial={ { scale: 0.8, opacity: 0 }}
             whileInView={ { scale: 1, opacity: 1 }}
+            viewport={ { once: true }}
             transition={ {
               type: "spring",
               stiffness: 200,
@@ -56,7 +59,7 @@ export default function Footer() {
             <motion.div key={i}
               initial={ { scale: 0.8, opacity: 0 }}
               whileInView={ { scale: 1, opacity: 1 }}
-              //viewport={ { once: true }}
+              viewport={ { once: true }}
               transition={ {
                 type: "spring",
                 stiffness: 200,
