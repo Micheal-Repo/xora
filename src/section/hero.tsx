@@ -32,6 +32,7 @@ export default function Hero() {
                 stiffness: 200,
                 damping: 10,
               }}
+              className="caption"
               >
               Video Editing
             </motion.p>
