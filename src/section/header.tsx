@@ -48,7 +48,7 @@ export default function Header() {
           activeClass="text-p3"
           to={linkItem.link}
           spy={true}
-          smooth={true}
+          smooth="linear"
           offset={100}
           >
           {linkItem.label}
@@ -171,7 +171,7 @@ export default function Header() {
                 activeClass="text-p3"
                 to={item.link}
                 spy={true}
-                smooth={true}
+                smooth="linear"
                 offset={100}
                 >
                 <p onClick={() => setIsOpen(false)}>
