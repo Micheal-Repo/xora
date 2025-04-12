@@ -28,74 +28,78 @@ export default function Download() {
 
       <section className="w-screen relative section-p bg-gradient-to-b from-s3 via-s5 to-s5 ">
 
-        <div className="container md:flex md:justify-between md:items-center overflow-hidden">
+        <div className="container overflow-hidden">
 
-          {/*logo*/}
-          <div className="space-y-6">
+          <div className="w-full md:flex md:justify-between md:items-center ">
+
+            {/*logo*/}
+            <div className="space-y-6">
+              <motion.div
+                initial={ { scale: 0.8, opacity: 0 }}
+                whileInView={ { scale: 1, opacity: 1 }}
+                transition={ {
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                }}
+                >
+                <Image
+                  src="/images/xora.svg"
+                  alt="logo"
+                  width={150}
+                  height={150}
+                  />
+              </motion.div>
+              <motion.p
+                initial={ { scale: 0.8, opacity: 0 }}
+                whileInView={ { scale: 1, opacity: 1 }}
+                transition={ {
+                  type: "spring",
+                  stiffness: 200,
+                  damping: 10,
+                }}
+                className="text-sp max-w-md">
+                Try it now for free on iOS, Android, PC, Web - whatever your
+                flavor, we've got you covered.
+              </motion.p>
+
+              <div className="flex items-center flex-wrap gap-4 md:gap-6">
+                {links.map((item, i)=>(
+                  <motion.div
+                    key={i}
+                    initial={ { scale: 0.8, opacity: 0 }}
+                    whileInView={ { scale: 1, opacity: 1 }}
+                    transition={ {
+                      type: "spring",
+                      stiffness: 200,
+                      damping: 10,
+                      delay: i * 0.3,
+                    }}
+                    className="bg-sp w-[80px] rounded-full h-[80px] text-white relative flex justify-center items-center">
+                    <item.icon />
+                    <BorderBeam duration={8} size={80} delay={0.2 * i} />
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+
             <motion.div
-              initial={ { scale: 0.8, opacity: 0 }}
-              whileInView={ { scale: 1, opacity: 1 }}
+              initial={ { opacity: 0 }}
+              whileInView={ { opacity: 1 }}
               transition={ {
-                type: "spring",
-                stiffness: 200,
-                damping: 10,
+                duration: 0.5
               }}
-              >
+              className="border border-p1 rounded-2xl p-4 max-md:hidden">
               <Image
-                src="/images/xora.svg"
-                alt="logo"
-                width={150}
-                height={150}
+                src="/images/screen.jpg"
+                width={855}
+                height={655}
+                alt="screen"
+                className="rounded-2xl"
                 />
             </motion.div>
-            <motion.p
-              initial={ { scale: 0.8, opacity: 0 }}
-              whileInView={ { scale: 1, opacity: 1 }}
-              transition={ {
-                type: "spring",
-                stiffness: 200,
-                damping: 10,
-              }}
-              className="text-sp max-w-md">
-              Try it now for free on iOS, Android, PC, Web - whatever your
-              flavor, we've got you covered.
-            </motion.p>
-
-            <div className="flex items-center flex-wrap gap-4 md:gap-6">
-              {links.map((item, i)=>(
-                <motion.div
-                  key={i}
-                  initial={ { scale: 0.8, opacity: 0 }}
-                  whileInView={ { scale: 1, opacity: 1 }}
-                  transition={ {
-                    type: "spring",
-                    stiffness: 200,
-                    damping: 10,
-                    delay: i * 0.3,
-                  }}
-                  className="bg-sp w-[80px] rounded-full h-[80px] text-white relative flex justify-center items-center">
-                  <item.icon />
-                  <BorderBeam duration={8} size={80} />
-                </motion.div>
-              ))}
-            </div>
           </div>
 
-          <motion.div
-            initial={ { opacity: 0 }}
-            whileInView={ { opacity: 1 }}
-            transition={ {
-              duration: 0.5
-            }}
-            className="border-2 border-p1 rounded-2xl p-10 max-md:hidden">
-            <Image
-              src="/images/screen.jpg"
-              width={855}
-              height={655}
-              alt="screen"
-              className="rounded-2xl"
-              />
-          </motion.div>
           <Company />
         </div>
       </section>

@@ -51,7 +51,7 @@ export default function Footer() {
           </motion.p>
         </div>
 
-        <div className="flex items-center gap-4 max-md:mt-10">
+        <div className="flex items-center gap-6 max-md:mt-10">
           {socials.map((item, i)=>(
             <motion.div key={i}
               initial={ { scale: 0.8, opacity: 0 }}
@@ -67,8 +67,8 @@ export default function Footer() {
               <Image
                 src={item.icon}
                 alt={item.title}
-                width={50}
-                height={50}
+                width={20}
+                height={20}
                 />
             </motion.div>
           ))}

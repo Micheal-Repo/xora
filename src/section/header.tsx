@@ -27,7 +27,7 @@ import {
 
 //components
 import {
-  Meteors
+  ScrollProgress
 } from "@/components"
 
 
@@ -72,6 +72,7 @@ export default function Header() {
         }}
         className="top-0 left-0 w-screen fixed z-40 bg-background/[0.6] backdrop-blur backdrop-blur-md border-b border-border"
         >
+        <ScrollProgress />
         <nav className="container">
           {/*mobile*/}
           <div className="md:hidden w-full flex justify-between py-4 items-center">

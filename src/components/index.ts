@@ -20,6 +20,9 @@ import {
 import {
   Marquee
 } from "./ui/marquee";
+import {
+  ScrollProgress
+} from "./ui/scroll-progress";
 
 
 //custom
@@ -42,6 +45,7 @@ export {
   TextAnimate,
   ShinyButton,
   AnimatedBackground,
+  ScrollProgress,
 
   //custom
   ScrollElement,
