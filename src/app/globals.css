@@ -206,7 +206,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .container {
-  @apply mx-auto max-w-5xl px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
+  @apply mx-auto max-w-6xl px-16 max-xl:px-10 max-lg:px-6 max-sm:px-4;
 }
 
 .section-p {
