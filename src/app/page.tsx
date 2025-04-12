@@ -5,6 +5,7 @@ import {
   Pricing,
   Faq,
   Testimonials,
+  Download,
 } from "@/section"
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Pricing />
       <Faq />
       <Testimonials />
+      <Download />
     </div>
   )
 }

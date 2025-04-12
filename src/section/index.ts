@@ -4,6 +4,7 @@ import Features from "./features"
 import Pricing from "./pricing"
 import Faq from "./faq"
 import Testimonials from "./testimonials"
+import Download from "./download"
 
 
 export {
@@ -13,4 +14,5 @@ export {
   Pricing,
   Faq,
   Testimonials,
+  Download,
 }

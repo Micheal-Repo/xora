@@ -1,3 +1,12 @@
+import {
+  Web,
+  Windows,
+  Ios,
+  Android
+} from "./links"
+
+
+
 type navLinkType = {
   label: string,
   link: string
@@ -278,6 +287,80 @@ const testimonials: testimonialType[] = [{
 
 
 
+type logoType = {
+  id: string,
+  title: string,
+  url: string,
+  width: number,
+  height: number,
+}
+
+const logos: logoType[] = [{
+  id: "0",
+  title: "Afterpay",
+  url: "/images/logos/afterpay.svg",
+  width: 156,
+  height: 48,
+},
+  {
+    id: "1",
+    title: "Amplitude",
+    url: "/images/logos/amplitude.svg",
+    width: 194,
+    height: 48,
+  },
+  {
+    id: "2",
+    title: "Sonos",
+    url: "/images/logos/sonos.svg",
+    width: 115,
+    height: 48,
+  },
+  {
+    id: "3",
+    title: "Maze",
+    url: "/images/logos/maze.svg",
+    width: 142,
+    height: 48,
+  },
+  {
+    id: "4",
+    title: "Drips",
+    url: "/images/logos/drips.svg",
+    width: 77,
+    height: 48,
+  },
+];
+
+
+
+
+
+const links = [{
+  id: "0",
+  title: "Ios",
+  icon: Ios,
+  url: "#",
+},
+  {
+    id: "1",
+    title: "Android",
+    icon: Android,
+    url: "#",
+  },
+  {
+    id: "2",
+    title: "Windows",
+    icon: Windows,
+    url: "#",
+  },
+  {
+    id: "3",
+    title: "Web",
+    icon: Web,
+    url: "#",
+  },
+];
 
 
 export {
@@ -287,11 +370,14 @@ export {
   plans,
   faq,
   testimonials,
+  logos,
+  links,
   type navLinkType,
   type featuresType,
   type detailType,
   type planType,
   type faqType,
   type testimonialType,
+  type logoType,
 
 }
