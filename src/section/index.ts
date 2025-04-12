@@ -5,6 +5,7 @@ import Pricing from "./pricing"
 import Faq from "./faq"
 import Testimonials from "./testimonials"
 import Download from "./download"
+import Footer from "./footer"
 
 
 export {
@@ -15,4 +16,5 @@ export {
   Faq,
   Testimonials,
   Download,
+  Footer,
 }

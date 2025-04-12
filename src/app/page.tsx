@@ -6,6 +6,7 @@ import {
   Faq,
   Testimonials,
   Download,
+  Footer,
 } from "@/section"
 
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Faq />
       <Testimonials />
       <Download />
+      <Footer />
     </div>
   )
 }

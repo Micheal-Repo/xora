@@ -1,10 +1,17 @@
+"use client"
 import Image from "next/image"
+import {
+  motion
+} from "framer-motion"
+
+
 //components
 import {
   ScrollElement,
   Marquee,
   BorderBeam
 } from "@/components";
+
 
 //data
 import {
@@ -21,30 +28,74 @@ export default function Download() {
 
       <section className="w-screen relative section-p bg-gradient-to-b from-s3 via-s5 to-s5 ">
 
-        <div className="container">
+        <div className="container md:flex md:justify-between md:items-center overflow-hidden">
+
           {/*logo*/}
-          <div className="space-y-4">
-            <Image
-              src="/images/xora.svg"
-              alt="logo"
-              width={120}
-              height={120}
-              />
-            <p className="text-sp">
+          <div className="space-y-6">
+            <motion.div
+              initial={ { scale: 0.8, opacity: 0 }}
+              whileInView={ { scale: 1, opacity: 1 }}
+              transition={ {
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+              >
+              <Image
+                src="/images/xora.svg"
+                alt="logo"
+                width={150}
+                height={150}
+                />
+            </motion.div>
+            <motion.p
+              initial={ { scale: 0.8, opacity: 0 }}
+              whileInView={ { scale: 1, opacity: 1 }}
+              transition={ {
+                type: "spring",
+                stiffness: 200,
+                damping: 10,
+              }}
+              className="text-sp max-w-md">
               Try it now for free on iOS, Android, PC, Web - whatever your
               flavor, we've got you covered.
-            </p>
+            </motion.p>
 
             <div className="flex items-center flex-wrap gap-4 md:gap-6">
               {links.map((item, i)=>(
-                <div className="bg-sp border border-sp w-[80px] h-[80px] text-white relative flex justify-center items-center">
+                <motion.div
+                  key={i}
+                  initial={ { scale: 0.8, opacity: 0 }}
+                  whileInView={ { scale: 1, opacity: 1 }}
+                  transition={ {
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 10,
+                    delay: i * 0.3,
+                  }}
+                  className="bg-sp w-[80px] rounded-full h-[80px] text-white relative flex justify-center items-center">
                   <item.icon />
-                  <BorderBeam duration={8} size={60} />
-                </div>
+                  <BorderBeam duration={8} size={80} />
+                </motion.div>
               ))}
             </div>
           </div>
 
+          <motion.div
+            initial={ { opacity: 0 }}
+            whileInView={ { opacity: 1 }}
+            transition={ {
+              duration: 0.5
+            }}
+            className="border-2 border-p1 rounded-2xl p-10 max-md:hidden">
+            <Image
+              src="/images/screen.jpg"
+              width={855}
+              height={655}
+              alt="screen"
+              className="rounded-2xl"
+              />
+          </motion.div>
           <Company />
         </div>
       </section>
@@ -56,7 +107,7 @@ export default function Download() {
 
   export function Company() {
     return (
-      <div className="mt-[2rem] relative flex w-full max-w-xl mx-auto flex-col items-center justify-center overflow-hidden">
+      <div className="mt-[4rem] relative flex w-full max-w-3xl mx-auto flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s] [--gap:2rem]">
           {logos.map((item, i) => (
             <Logo key={i} item={item} />
