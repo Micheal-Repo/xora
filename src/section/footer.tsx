@@ -51,7 +51,7 @@ export default function Footer() {
           </motion.p>
         </div>
 
-        <div className="flex items-center gap-6 max-md:mt-10">
+        <div className="flex items-center gap-8 max-md:mt-10">
           {socials.map((item, i)=>(
             <motion.div key={i}
               initial={ { scale: 0.8, opacity: 0 }}
@@ -63,7 +63,7 @@ export default function Footer() {
                 damping: 10,
                 delay: (i * 0.2) + 0.3,
               }}
-              className="rounded-lg border border-border hover:border-p1 transition-all duration-300">
+              className="rounded-sm border border-border hover:border-p1 transition-all duration-300 p-4 ">
               <Image
                 src={item.icon}
                 alt={item.title}

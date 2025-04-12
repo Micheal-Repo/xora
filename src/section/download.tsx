@@ -77,7 +77,7 @@ export default function Download() {
                     }}
                     className="bg-sp w-[80px] rounded-full h-[80px] text-white relative flex justify-center items-center">
                     <item.icon />
-                    <BorderBeam duration={8} size={80} delay={0.2 * i} />
+                    <BorderBeam duration={8} size={80} delay={10 * i} />
                   </motion.div>
                 ))}
               </div>
@@ -89,11 +89,11 @@ export default function Download() {
               transition={ {
                 duration: 0.5
               }}
-              className="border border-p1 rounded-2xl p-4 max-md:hidden">
+              className="border border-white/[0.3] rounded-2xl p-4 max-md:hidden">
               <Image
                 src="/images/screen.jpg"
-                width={855}
-                height={655}
+                width={755}
+                height={555}
                 alt="screen"
                 className="rounded-2xl"
                 />
