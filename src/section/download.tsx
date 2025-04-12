@@ -111,7 +111,7 @@ export default function Download() {
 
   export function Company() {
     return (
-      <div className="mt-[4rem] relative flex w-full max-w-3xl mx-auto flex-col items-center justify-center overflow-hidden">
+      <div className="mt-[4rem] relative flex w-full mx-auto flex-col items-center justify-center overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s] [--gap:2rem]">
           {logos.map((item, i) => (
             <Logo key={i} item={item} />
