@@ -30,7 +30,7 @@ export default function Download() {
 
         <div className="container overflow-hidden">
 
-          <div className="w-full md:flex md:justify-between md:items-center ">
+          <div className="w-full md:flex md:justify-between md:items-center md:gap-6">
 
             {/*logo*/}
             <div className="space-y-6">

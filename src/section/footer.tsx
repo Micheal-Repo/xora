@@ -63,7 +63,7 @@ export default function Footer() {
                 damping: 10,
                 delay: (i * 0.2) + 0.3,
               }}
-              className="rounded-sm border border-border hover:border-p1 transition-all duration-300 p-4 ">
+              className="rounded-sm border border-border hover:border-p1 transition-all duration-300 p-2 ">
               <Image
                 src={item.icon}
                 alt={item.title}
